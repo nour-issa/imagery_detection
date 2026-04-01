@@ -1,0 +1,185 @@
+body{
+    padding-left: 0px;
+    width: 102%;
+}
+#whole{
+    width: 100%;
+    height: 220vh;
+    background: linear-gradient(45deg, #b0b2c7, rgb(63, 20, 62));
+}
+   
+  #queryByMonthChartOuterDiv {
+     width:550px;
+     height:270px;
+    background-color:rgba(255, 255, 255, 0.805);
+    border-radius: 1%;
+}
+
+
+
+
+#geomChartOuterDiv {
+   width:710px;
+ background-color:rgba(255, 255, 255, 0.805);
+ border-radius: 1%;
+    margin-top: -2%;
+}
+
+#queryBySahiChartOuterDiv {
+  width:350px;
+  height:270px;
+    background-color:rgba(255, 255, 255, 0.805);
+    border-radius: 1%;
+}
+
+
+/* Existing styles for charts */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chart {
+  position: relative; /* Required for absolute positioning */
+  flex: 1;
+  min-width: calc(25% - 20px); /* Divide the available space among 4 items with margins accounted for */
+  margin: 10px;
+}
+
+.chart-wrapper {
+  position: relative; /* Required for positioning */
+}
+
+/* Styles for options container */
+.options-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  display: none; /* Hide initially */
+}
+
+.chart-wrapper:hover .options-container {
+  display: block; /* Show on hover */
+}
+
+.options-container button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #6f00ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.bubbly{
+  position: absolute;
+   margin-left:25%;
+   margin-top:41%;
+}
+
+
+.container-form {
+    background-color: rgba(255, 255, 255, 0.805);
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position:absolute;
+    margin-top: 40%;
+}
+
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  gap:0px;
+
+}
+.container-form-time-conf {
+  background-color: rgba(255, 255, 255, 0.805);
+  border-radius: 10px;
+  padding-top: 15px;
+font-weight: 300;
+  padding-bottom: 20px;
+  height: 280px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 0.6;
+  width: 5%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: -320px;
+  margin-left: -400px;
+  margin-right: 750px;
+
+
+}
+
+.centered-form-time-conf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap:-100px; */
+}
+
+
+#timeConfChartOuterDiv {
+  width:700px;
+  height:280px;
+/*  height:50%;
+ max-width:1700px; */
+ background-color:rgba(255, 255, 255, 0.805);
+ border-radius: 1%;
+ margin-top: -46%;
+ margin-left: 113%;
+    /* margin-right: 80%; */
+ 
+}
+#classesDistributionChartOuterDiv {
+    width:450px;
+     height:500px; 
+     margin-bottom: 100px;
+  /* max-width:5170px;  */
+    background-color:rgba(255, 255, 255, 0.805);
+    border-radius: 1%;
+   
+
+}
+
+
+.buttons{
+  /* margin: 5px; */
+  /* padding: 5px 10px; */
+  background-color: #6f00ff;
+  /* background-color: #007bff; */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+  margin-top: 15px;
+  margin-bottom: 10px; 
+  color: black;
+  color: black;
+  font-size: larger;
+  font-weight:500;
+}
+
+.form-row label {
+  margin-right: 10px; /* Add space between label and input */
+}
+
