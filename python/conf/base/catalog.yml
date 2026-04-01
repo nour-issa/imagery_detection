@@ -1,0 +1,113 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+raw_imagery:
+  type: pillow.ImageDataSet
+  filepath: data/01_raw/raw_imagery.jpg
+
+
+yolox_raw_detected_imagery:
+  type: pillow.ImageDataSet
+  filepath: data/09_yolox_predicted_output/yolox_raw_detected_imagery.jpg
+
+yolox_super_resolution_detected_imagery:
+  type: pillow.ImageDataSet
+  filepath: data/09_yolox_predicted_output/yolox_super_resolution_detected_imagery.jpg
+
+yolox_result:
+  type: text.TextDataSet
+  filepath: data/10_yolox_objects_output/yolox_result.txt
+
+yolox_all_classes:
+  type: json.JSONDataSet
+  filepath: data/10_yolox_objects_output/yolox_all_classes.json
+
+confidence:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/yolox_confidence.json
+
+yolox_confidence_raw_detected_imagery:
+  type: pillow.ImageDataSet
+  filepath: data/09_yolox_predicted_output/yolox_confidence_raw_detected_imagery.jpg
+#
+raw_coords:
+  type: text.TextDataSet
+  filepath: data/01_raw/raw_coords.txt
+
+
+yolox_all_map_objects:
+  type: pandas.SQLTableDataSet
+  credentials: postgres
+  table_name: yolox_all_targets
+  load_args:
+    schema: public
+  save_args:
+    schema: public
+    if_exists: append
+
+
+yolox_all_map_objects_sahi:
+  type: pandas.SQLTableDataSet
+  credentials: postgres
+  table_name: yolox_all_targets
+  load_args:
+    schema: public
+  save_args:
+    schema: public
+    if_exists: append
+
+yolonas_raw_detected_imagery:
+  type: pillow.ImageDataSet
+  filepath: data/12_yolonas_predicted_output/yolonas_raw_detected_imagery.jpg
+
+
+yolonas_result:
+  type: text.TextDataSet
+  filepath: data/12_yolonas_predicted_output/yolonasss_confidence.txt
+
+user_result:
+  type: geopandas.GeoJSONDataSet
+  filepath: data/11_map_objects/user_objects_data.geojson
+
+user_map_objects:
+  type: pandas.SQLTableDataSet
+  credentials: postgres
+  table_name: user_targets
+  load_args:
+    schema: public
+  save_args:
+    schema: public
+    if_exists: append
+
+yolox_detected_imagery_sahi:
+  type: pillow.ImageDataSet
+  filepath: data/14_sahi/yolox_detected_imagery_sahi.jpg
+
+yolox_result_sahi:
+  type: text.TextDataSet
+  filepath: data/14_sahi/yolox_result_sahi.txt
+
+yolox_all_classes_sahi:
+  type: json.JSONDataSet
+  filepath: data/14_sahi/yolox_all_classes_sahi.json
+
+
+yolox_classes:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/yolox_classes.json
+
+
+yolox_confidence_detected_imagery_sahi:
+  type: pillow.ImageDataSet
+  filepath: data/14_sahi/yolox_confidence_detected_imagery_sahi.jpg
+
+yolox_classes_sahi:
+  type: json.JSONDataSet
+  filepath: data/05_model_input/yolox_classes_sahi.json
+
+
+yolonas_result_sahi:
+  type: text.TextDataSet
+  filepath: data/14_sahi/yolonas_result_sahi.txt
