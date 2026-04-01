@@ -1,0 +1,8 @@
+
+https://colab.research.google.com/drive/12jy91Q9ck4gABBEy_shOkTcchvXn8NUA?usp=sharing yolox-m 8 classes
+https://colab.research.google.com/drive/1hNX7vYjJbhZzY7YQsEAJxldshMh3SYc1?usp=sharing yolox-m no container
+https://colab.research.google.com/drive/1Hqs1I05-F6pved8yn_sve81NbIUN5t6O?usp=sharing yolox-all 
+https://colab.research.google.com/drive/1HSfu95UbxjHaP5Dy-Yczg9BHKzSMAqo6?usp=sharing yolox small and container
+https://colab.research.google.com/drive/1w_NqtB6IlUSUT_N0qKsxgeZocOTCwG7n?usp=sharing yolox-NAS only 8 classes
+https://colab.research.google.com/drive/1cCpJrYrASN3S9k1p_LXSLwvnj12hlyUQ?usp=sharing yoloNAS-splitted data samll
+https://colab.research.google.com/drive/1QhViQGCJ_0RYIw3SDn6xfPQfQn4kgqjt?usp=sharing yolonas all
